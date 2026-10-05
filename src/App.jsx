@@ -140,19 +140,19 @@ function Countdown() {
   return (
     <section style={{ position: 'relative', minHeight: '70svh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', overflow: 'hidden', padding: 'clamp(80px,10vh,140px) 24px clamp(60px,8vh,110px)' }}>
       <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/couple2.png")', backgroundSize: 'cover', backgroundPosition: 'center 12%', backgroundColor: '#3a2a1a' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.94) 0%, rgba(245,236,224,.92) 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.85) 0%, rgba(245,236,224,.90) 100%)' }} />
       <div className="content-col" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
-        <Reveal as="p" className="eyebrow" style={{ color: 'var(--gold-light)' }}>Counting Down To</Reveal>
+        <Reveal as="p" className="eyebrow" style={{ color: 'var(--gold-deep)' }}>Counting Down To</Reveal>
         <Reveal as="h2" className="gold-shimmer" style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(44px,7vw,76px)', margin: '6px 0 clamp(30px,4vw,44px)', fontWeight: 400 }}>Our Wedding Day</Reveal>
         <Reveal style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 'clamp(10px,1.5vw,18px)' }}>
           {t.map((n, i) => (
             <div key={i} className="glass-card" style={{ padding: 'clamp(16px,2.5vw,28px) 4px' }}>
               <div style={{ fontSize: 'clamp(30px,5vw,56px)', fontWeight: 600, color: 'var(--gold)' }}>{String(n).padStart(2, '0')}</div>
-              <div style={{ fontFamily: 'var(--font-label)', fontSize: 'clamp(10px,1.2vw,13px)', letterSpacing: '.12em', textTransform: 'uppercase', color: 'var(--gold-light)', marginTop: 4 }}>{L[i]}</div>
+              <div style={{ fontFamily: 'var(--font-label)', fontSize: 'clamp(10px,1.2vw,13px)', letterSpacing: '.12em', textTransform: 'uppercase', color: 'var(--gold-deep)', marginTop: 4 }}>{L[i]}</div>
             </div>
           ))}
         </Reveal>
-        <Reveal as="p" style={{ marginTop: 26, fontFamily: 'var(--font-label)', fontSize: 'clamp(13px,1.4vw,16px)', letterSpacing: '.05em', color: 'rgba(255,255,255,.75)' }}>We can't wait to celebrate with you</Reveal>
+        <Reveal as="p" style={{ marginTop: 26, fontFamily: 'var(--font-label)', fontSize: 'clamp(13px,1.4vw,16px)', letterSpacing: '.05em', color: 'var(--gold-deep)' }}>We can't wait to celebrate with you</Reveal>
       </div>
     </section>
   )
@@ -163,7 +163,7 @@ function EventSection({ e }) {
   return (
     <section style={{ position: 'relative', minHeight: '100svh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 'clamp(70px,9vh,120px) 28px', overflow: 'hidden' }}>
       <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/photo1.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center 20%' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(253,248,240,.94) 0%, rgba(253,248,240,.85) 40%, rgba(253,248,240,.96) 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(253,248,240,.94) 0%, rgba(253,248,240,.80) 40%, rgba(253,248,240,.86) 100%)' }} />
       <div className="content-col" style={{ position: 'relative', zIndex: 2 }}>
         <Reveal as="p" className="eyebrow" style={{ color: e.color }}>{e.eyebrow}</Reveal>
         <Reveal as="h2" style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(52px,8vw,84px)', color: e.color, margin: '4px 0 14px', fontWeight: 400 }}>{e.title}</Reveal>
@@ -218,7 +218,7 @@ function Final() {
   return (
     <section style={{ position: 'relative', minHeight: '100svh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: 'clamp(80px,10vh,140px) 28px', overflow: 'hidden' }}>
       <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/hero.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center 25%' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.94) 0%, rgba(245,236,224,.92) 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.80) 0%, rgba(245,236,224,.90) 100%)' }} />
       <div className="content-col" style={{ position: 'relative', zIndex: 2 }}>
         <Reveal style={{ width: 56, height: 56, margin: '0 auto 18px', borderRadius: '50%', border: '1px solid var(--gold)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-script)', fontSize: 22, color: 'var(--gold-deep)' }}>S&amp;R</Reveal>
         <Reveal as="h2" className="gold-shimmer" style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(42px,7vw,72px)', marginBottom: 10, fontWeight: 400 }}>With Love &amp; Gratitude</Reveal>
