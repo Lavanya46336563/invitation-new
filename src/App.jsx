@@ -75,9 +75,9 @@ function Cover({ onOpen }) {
       <Corner pos={{ top: 24, right: 24, transform: 'scaleX(-1)' }} />
       <Corner pos={{ bottom: 24, left: 24, transform: 'scaleY(-1)' }} />
       <Corner pos={{ bottom: 24, right: 24, transform: 'scale(-1,-1)' }} />
-      <div className="eyebrow" style={{ marginBottom: 10 }}>With Love &amp; Joy</div>
-      <div className="gold-shimmer" style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(34px,5.5vw,60px)', textAlign: 'center', lineHeight: 1.15, padding: '0 20px' }}>Saravanan &amp; Ragasudha</div>
-      <p style={{ fontStyle: 'italic', fontSize: 14, color: 'var(--text-medium)', marginTop: 4 }}>request the pleasure of your company</p>
+      <motion.div animate={{ opacity: opening ? 0 : 1 }} initial={{ opacity: 0 }} transition={{ delay: 0.5 }} className="eyebrow" style={{ marginBottom: 10}}>With Love &amp; Joy</motion.div>
+      <motion.div animate={{ opacity: opening ? 0 : 1 }} initial={{ opacity: 0 }} transition={{ delay: 0.5 }} className="gold-shimmer" style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(34px,5.5vw,60px)', textAlign: 'center', lineHeight: 1.15, padding: '0 20px' }}>Saravanan &amp; Ragasudha</motion.div>
+      <motion.p animate={{ opacity: opening ? 0 : 1 }} initial={{ opacity: 0 }} transition={{ delay: 0.5 }} style={{ fontStyle: 'italic', fontSize: 14, color: 'var(--text-medium)', marginTop: 4 }}>request the pleasure of your company</motion.p>
       <div style={{ display: 'flex', alignItems: 'center', gap: 8, margin: '10px 0 22px' }}>
         <span style={{ width: 26, height: 1, background: 'var(--gold)', opacity: .6 }} />
         <span style={{ width: 5, height: 5, background: 'var(--gold)', transform: 'rotate(45deg)' }} />
