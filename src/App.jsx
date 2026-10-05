@@ -112,7 +112,7 @@ function Cover({ onOpen }) {
 function Hero() {
   return (
     <section style={{ position: 'relative', height: '100svh', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/photo2.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center 20%', backgroundColor: '#3a2a1a' }} />
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/hero.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center 20%', backgroundColor: '#3a2a1a' }} />
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(0,0,0,.55) 0%, rgba(0,0,0,.15) 20%, transparent 38%, transparent 55%, rgba(0,0,0,.6) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', height: '100%' }}>
         <Reveal style={{ padding: 'clamp(28px,5vw,56px) 24px 18px', textAlign: 'center' }}>
