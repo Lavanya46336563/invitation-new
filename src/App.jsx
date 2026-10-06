@@ -217,8 +217,8 @@ function EventSection({ e }) {
 function Final() {
   return (
     <section style={{ position: 'relative', minHeight: '100svh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: 'clamp(80px,10vh,140px) 28px', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/photo4.png")', backgroundSize: 'cover', backgroundPosition: 'center 25%' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.90) 0%, rgba(245,236,224,.95) 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/couple3.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center 25%' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.80) 0%, rgba(245,236,224,.85) 100%)' }} />
       <div className="content-col" style={{ position: 'relative', zIndex: 2 }}>
         <Reveal style={{ width: 56, height: 56, margin: '0 auto 18px', borderRadius: '50%', border: '1px solid var(--gold)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-script)', fontSize: 22, color: 'var(--gold-deep)' }}>S&amp;R</Reveal>
         <Reveal as="h2" className="gold-shimmer" style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(42px,7vw,72px)', marginBottom: 10, fontWeight: 400 }}>With Love &amp; Gratitude</Reveal>
