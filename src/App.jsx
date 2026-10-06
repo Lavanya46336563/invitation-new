@@ -10,11 +10,11 @@ const GALLERY = [
   ['/gallery9.jpg','With extended family'],['/gallery10.jpg','Surrounded by loved ones'],
 ]
 const EVENTS = [
-  { bg:'/photos/photo1.jpeg', color:'#5a3200', eyebrow:'FOREVER BEGINS HERE', title:'The Wedding',
-    sub:'Join us as we exchange vows and become one.', rows:[['Date','10 December 2026'],['Time','10:30 AM to 12:00 AM'],['Venue','ANUT Mahal, Aruppukottai']],
+  { bg:'/photos/test.jpg', color:'#6b0b59', eyebrow:'FOREVER BEGINS HERE', title:'The Wedding',
+    sub:'Join us as we exchange vows and become one.', rows:[['Date','10 December 2026'],['Time','10:30 AM to 12:00 PM'],['Venue','ANUT Mahal, Aruppukottai']],
     map:'https://maps.app.goo.gl/SPz3SK3NY4kxVBCw5',
     cal:'https://www.google.com/calendar/render?action=TEMPLATE&text=The+Wedding&dates=20261210T103000%2F20261210T120000&location=ANUT+Mahal%2C+Aruppukottai&details=Join+us+as+we+exchange+vows+and+become+one.' },
-  { bg:'/photos/image.jpeg', color:'#6b1e48', eyebrow:'AN EVENING TO REMEMBER', title:'Engagement',
+  { bg:'/photos/image1.jpg', color:'#6b1e48', eyebrow:'AN EVENING TO REMEMBER', title:'Engagement',
     sub:'An evening of celebration, food and festivities.', rows:[['Date','09 December 2026'],['Time','7:00 PM onwards'],['Venue','ANUT Mahal, Aruppukottai']],
     map:'https://maps.app.goo.gl/SPz3SK3NY4kxVBCw5',
     cal:'https://www.google.com/calendar/render?action=TEMPLATE&text=Reception&dates=20261209T190000%2F20261209T210000&location=ANUT+Mahal%2C+Aruppukottai&details=An+evening+of+celebration%2C+food+and+festivities.' },
