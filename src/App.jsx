@@ -10,11 +10,11 @@ const GALLERY = [
   ['/gallery9.jpg','With extended family'],['/gallery10.jpg','Surrounded by loved ones'],
 ]
 const EVENTS = [
-  { bg:'/eventbg-wedding.jpg', color:'#5a3200', eyebrow:'FOREVER BEGINS HERE', title:'The Wedding',
+  { bg:'/photos/photo1.jpeg', color:'#5a3200', eyebrow:'FOREVER BEGINS HERE', title:'The Wedding',
     sub:'Join us as we exchange vows and become one.', rows:[['Date','10 December 2026'],['Time','10:30 AM to 12:00 AM'],['Venue','ANUT Mahal, Aruppukottai']],
     map:'https://maps.app.goo.gl/SPz3SK3NY4kxVBCw5',
     cal:'https://www.google.com/calendar/render?action=TEMPLATE&text=The+Wedding&dates=20261210T103000%2F20261210T120000&location=ANUT+Mahal%2C+Aruppukottai&details=Join+us+as+we+exchange+vows+and+become+one.' },
-  { bg:'/eventbg-reception.jpg', color:'#6b1e48', eyebrow:'AN EVENING TO REMEMBER', title:'Engagement',
+  { bg:'/photos/image.jpeg', color:'#6b1e48', eyebrow:'AN EVENING TO REMEMBER', title:'Engagement',
     sub:'An evening of celebration, food and festivities.', rows:[['Date','09 December 2026'],['Time','7:00 PM onwards'],['Venue','ANUT Mahal, Aruppukottai']],
     map:'https://maps.app.goo.gl/SPz3SK3NY4kxVBCw5',
     cal:'https://www.google.com/calendar/render?action=TEMPLATE&text=Reception&dates=20261209T190000%2F20261209T210000&location=ANUT+Mahal%2C+Aruppukottai&details=An+evening+of+celebration%2C+food+and+festivities.' },
@@ -138,9 +138,9 @@ function Countdown() {
   useEffect(() => { const i = setInterval(() => setT(calc()), 1000); return () => clearInterval(i) }, [])
   const L = ['Days', 'Hours', 'Minutes', 'Seconds']
   return (
-    <section style={{ position: 'relative', minHeight: '70svh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', overflow: 'hidden', padding: 'clamp(80px,10vh,140px) 24px clamp(60px,8vh,110px)' }}>
+    <section style={{ position: 'relative', minHeight: '100svh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', overflow: 'hidden', padding: 'clamp(80px,10vh,140px) 24px clamp(60px,8vh,110px)' }}>
       <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/couple2.png")', backgroundSize: 'cover', backgroundPosition: 'center 12%', backgroundColor: '#3a2a1a' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.85) 0%, rgba(245,236,224,.90) 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.70) 0%, rgba(245,236,224,.75) 100%)' }} />
       <div className="content-col" style={{ position: 'relative', zIndex: 2, textAlign: 'center' }}>
         <Reveal as="p" className="eyebrow" style={{ color: 'var(--gold-deep)' }}>Counting Down To</Reveal>
         <Reveal as="h2" className="gold-shimmer" style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(44px,7vw,76px)', margin: '6px 0 clamp(30px,4vw,44px)', fontWeight: 400 }}>Our Wedding Day</Reveal>
@@ -162,8 +162,8 @@ function EventSection({ e }) {
   const btn = { display: 'inline-block', marginTop: 22, padding: '12px 22px', borderRadius: 999, fontFamily: 'var(--font-label)', fontSize: 13, letterSpacing: '.08em', textDecoration: 'none', textTransform: 'uppercase' }
   return (
     <section style={{ position: 'relative', minHeight: '100svh', display: 'flex', flexDirection: 'column', justifyContent: 'center', padding: 'clamp(70px,9vh,120px) 28px', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/photo1.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center 20%' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(253,248,240,.94) 0%, rgba(253,248,240,.80) 40%, rgba(253,248,240,.86) 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: `url("${e.bg}")`, backgroundSize: 'cover', backgroundPosition: e.pos || 'center 20%' }} />      
+      <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(253,248,240,.74) 0%, rgba(253,248,240,.75) 40%, rgba(253,248,240,.80) 100%)' }} />
       <div className="content-col" style={{ position: 'relative', zIndex: 2 }}>
         <Reveal as="p" className="eyebrow" style={{ color: e.color }}>{e.eyebrow}</Reveal>
         <Reveal as="h2" style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(52px,8vw,84px)', color: e.color, margin: '4px 0 14px', fontWeight: 400 }}>{e.title}</Reveal>
@@ -217,8 +217,8 @@ function EventSection({ e }) {
 function Final() {
   return (
     <section style={{ position: 'relative', minHeight: '100svh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: 'clamp(80px,10vh,140px) 28px', overflow: 'hidden' }}>
-      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/hero.jpeg")', backgroundSize: 'cover', backgroundPosition: 'center 25%' }} />
-      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.80) 0%, rgba(245,236,224,.90) 100%)' }} />
+      <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url("photos/photo4.png")', backgroundSize: 'cover', backgroundPosition: 'center 25%' }} />
+      <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 30%, rgba(255,250,240,.90) 0%, rgba(245,236,224,.95) 100%)' }} />
       <div className="content-col" style={{ position: 'relative', zIndex: 2 }}>
         <Reveal style={{ width: 56, height: 56, margin: '0 auto 18px', borderRadius: '50%', border: '1px solid var(--gold)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-script)', fontSize: 22, color: 'var(--gold-deep)' }}>S&amp;R</Reveal>
         <Reveal as="h2" className="gold-shimmer" style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(42px,7vw,72px)', marginBottom: 10, fontWeight: 400 }}>With Love &amp; Gratitude</Reveal>
@@ -238,6 +238,19 @@ export default function App() {
   const scaleY = useSpring(scrollYProgress, { stiffness: 120, damping: 30 })
 
   useEffect(() => { document.body.style.overflow = opened ? '' : 'hidden' }, [opened])
+  useEffect(() => {
+  const handleVisibilityChange = () => {
+    if (document.hidden) {
+      audio.current?.pause()
+    }
+  }
+
+  document.addEventListener('visibilitychange', handleVisibilityChange)
+
+  return () => {
+    document.removeEventListener('visibilitychange', handleVisibilityChange)
+  }
+}, [])
   const open = () => { setOpened(true); audio.current?.play().catch(() => {}) }
   const toggle = () => { const m = !muted; setMuted(m); if (audio.current) audio.current.muted = m }
 
