@@ -10,7 +10,7 @@ const GALLERY = [
   ['/gallery9.jpg','With extended family'],['/gallery10.jpg','Surrounded by loved ones'],
 ]
 const EVENTS = [
-  { bg:'/photos/image.png', color:'#6b0b59', eyebrow:'FOREVER BEGINS HERE', title:'The Wedding',
+  { bg:'/photos/event1.png', color:'#6b0b59', eyebrow:'FOREVER BEGINS HERE', title:'The Wedding',
     sub:'Join us as we exchange vows and become one.', rows:[['Date','10 December 2026'],['Time','10:30 AM to 12:00 PM'],['Venue','ANUT Mahal, Aruppukottai']],
     map:'https://maps.app.goo.gl/SPz3SK3NY4kxVBCw5',
     cal:'https://www.google.com/calendar/render?action=TEMPLATE&text=The+Wedding&dates=20261210T103000%2F20261210T120000&location=ANUT+Mahal%2C+Aruppukottai&details=Join+us+as+we+exchange+vows+and+become+one.' },
