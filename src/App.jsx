@@ -116,16 +116,16 @@ function Hero() {
       <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(rgba(0,0,0,.55) 0%, rgba(0,0,0,.15) 20%, transparent 38%, transparent 55%, rgba(0,0,0,.6) 100%)' }} />
       <div style={{ position: 'relative', zIndex: 2, display: 'flex', flexDirection: 'column', height: '100%' }}>
         <Reveal style={{ padding: 'clamp(28px,5vw,56px) 24px 18px', textAlign: 'center' }}>
-          <div style={{ width: 'clamp(54px,6vw,76px)', height: 'clamp(68px,6vw,76px)', margin: '0 auto 10px', borderRadius: '50%', border: '1px solid rgba(255,255,255,.85)', background: 'rgba(0,0,0,.22)', backdropFilter: 'blur(6px)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-script)', fontSize: 'clamp(20px,2.4vw,30px)', color: '#fff', textShadow: '0 1px 6px rgba(0,0,0,.7)' }}>S&amp;R</div>
+          <div style={{ width: 'clamp(54px,6vw,76px)', height: 'clamp(68px,6vw,76px)', margin: '0 auto 10px', borderRadius: '50%', border: '1px solid rgba(255, 255, 255, 0.85)', background: 'rgba(0,0,0,.22)', backdropFilter: 'blur(6px)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'var(--font-script)', fontSize: 'clamp(20px,2.4vw,30px)', color: '#D6B36A', textShadow: '0 1px 6px rgba(0,0,0,.7)' }}>S&amp;R</div>
           <div className="eyebrow" style={{ color: '#fff', textShadow: '0 1px 6px rgba(0,0,0,.7)' }}>Together With Our Families</div>
         </Reveal>
         <div style={{ flex: 1, minHeight: 140 }} />
         <Reveal className="glass-card" delay={.2} style={{ padding: 'clamp(20px,3vw,40px) clamp(24px,4vw,56px) clamp(32px,4vw,48px)', margin: '0 auto clamp(24px,4vw,44px)', maxWidth: 560, width: 'calc(100% - 24px)', textAlign: 'center' }}>
-          <div style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(46px,8vw,84px)', lineHeight: 1.15, color: '#fff' }}>Saravanan</div>
-          <div style={{ fontFamily: 'var(--font-label)', fontSize: 'clamp(13px,1.4vw,16px)', letterSpacing: '.35em', color: 'var(--gold-light)', margin: '2px 0' }}>AND</div>
-          <div style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(46px,8vw,84px)', lineHeight: 1.15, color: '#fff' }}>Ragasudha</div>
+          <div style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(46px,8vw,84px)', lineHeight: 1.15, color: '#FFF8EA' }}>Saravanan</div>
+          <div style={{ fontFamily: 'var(--font-label)', fontSize: 'clamp(13px,1.4vw,16px)', letterSpacing: '.35em', color: '#D6B36A', margin: '2px 0' }}>AND</div>
+          <div style={{ fontFamily: 'var(--font-script)', fontSize: 'clamp(46px,8vw,84px)', lineHeight: 1.15, color: '#FFF8EA' }}>Ragasudha</div>
           <div className="divider" style={{ background: 'var(--gold-light)' }} />
-          <div style={{ fontFamily: 'var(--font-label)', fontSize: 'clamp(13px,1.4vw,16px)', letterSpacing: '.15em', color: 'rgba(255,255,255,.85)' }}>10 · 12 · 2026 &nbsp;·&nbsp; Aruppukottai</div>
+          <div style={{ fontFamily: 'var(--font-label)', fontSize: 'clamp(13px,1.4vw,16px)', letterSpacing: '.15em', color: '#E8D5A8' }}>10 · 12 · 2026 &nbsp;·&nbsp; Aruppukottai</div>
         </Reveal>
       </div>
     </section>
